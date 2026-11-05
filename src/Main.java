@@ -18,6 +18,9 @@ public class Main {
         System.out.println(BankAccount.getTotalAccounts());
         acc3.deposit(-1000);
         acc3.transferTo(acc3,10000);
-
+        Bank bank = new Bank("bank",123);
+        bank.setAccounts(acc1,acc2);
+        bank.getBankInfo();
+        System.out.println(bank.getTotalBalance());
     }
 }

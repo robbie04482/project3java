@@ -54,4 +54,7 @@ public class BankAccount {
     public static  int NextAccountId(){
         return nextId;
     }
+    double GetBalance(){
+        return this.balance;
+    }
 }
